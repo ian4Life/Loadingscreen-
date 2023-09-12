@@ -1,5 +1,4 @@
--- Loading Screen
-if _G.LoadingScreen ~= true then
+
 
                             local ScreenGui = Instance.new("ScreenGui")
                             local Frame = Instance.new("Frame")
