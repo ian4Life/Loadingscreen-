@@ -1,3 +1,6 @@
+if getgenv().executed then return end
+getgenv().executed = true
+
 local ScreenGui = Instance.new("ScreenGui")
                             local Frame = Instance.new("Frame")
                             local TextLabel = Instance.new("TextLabel")
