@@ -1,4 +1,4 @@
-if _G.LoadingScreen ~= true then
+
 local Loading = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
